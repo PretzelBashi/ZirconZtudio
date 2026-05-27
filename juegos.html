@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ZZtudio</title>
+</head>
+
+<body>
+
+    <div id="navegacion">
+        <div id="logo">
+            <h2>ZZtudio</h2>
+        </div>
+
+        <div id="botones">
+            <a href="index.html" class="boton">Inicio</a>
+            <a href="juegos.html" class="boton">Juegos</a>
+            <a href="nosotros.html" class="boton">Nosotros</a>
+            <a href="contacto.html" class="boton">Contacto</a>
+        </div>
+    </div>
+
+    <section class="gamePage">
+
+        <!-- GALLERY -->
+
+        <div class="gallery">
+
+            <div class="thumb">
+
+            </div>
+
+            <div class="thumb active">
+
+            </div>
+
+            <div class="thumb">
+
+            </div>
+
+        </div>
+
+
+        <!-- GAME PANEL -->
+
+        <div class="gamePanel">
+
+            <h1>Caza Slimes</h1>
+
+            <div class="content">
+
+                <div class="description">
+
+                    Caza Slimes es un roguelike arcade infinito en el que, como una maga encerrada en un complejo
+                    sistema de cuevas, recorrerás cada cuarto y derrotarás a cientos, incluso miles de slimes, en busca
+                    de una salida.
+
+                    <br><br>
+
+                    Desafíate en las dificultades más altas, recolecta objetos y completa logros; incluso conoce más de
+                    este tan misterioso lugar en el que estás encerrado con tu única compañera; tal vez ella conozca una
+                    salida.
+<br><br>
+
+                </div>
+
+
+                <div class="price">
+                    Gratis
+                </div>
+
+            </div>
+
+            <div class="caption">
+  
+            </div>
+
+        </div>
+
+
+        <!-- BUTTONS -->
+
+<div class="actions">
+
+    <button class="status">
+        En desarrollo
+    </button>
+
+    <!-- CAMBIA EL LINK -->
+    <a
+        href="https://picazopretzel.itch.io/caza-slimes"
+        class="demoButton"
+        target="_blank"
+    >
+        Jugar Demo
+    </a>
+
+    <button>
+        Comprar
+    </button>
+
+</div>
+
+    </section>
+
+    <section class="social">
+
+<h2>Redes sociales</h2>
+
+<div class="icons">
+
+<a id="iconYT" href="https://www.youtube.com/channel/UCGu1oypt3LxskJd3Rn0k_fA"></a>
+
+<a id="iconIG" href="https://www.instagram.com/z.ztudio.0/"></a>
+
+</div>
+
+<button class="contact">
+Contacto
+</button>
+        <br><br><br><br>
+        <p>AVISO DE PRIVACIDAD:  
+
+            Diego, comercialmente conocido como Zircon Ztudio, con domicilio en [Dirección completa], es el responsable
+            del uso y protección de sus datos personales. FINALIDADES PRIMARIAS Los datos personales que recabamos de
+            usted, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita: •
+            Prestación de cualquier servicio solicitado • Envío de productos adquiridos en esta tienda en línea DATOS
+            PERSONALES RECABADOS Para las finalidades señaladas en el presente aviso de privacidad, podemos recabar sus
+            datos de identificación y contacto. DERECHOS ARCO Usted tiene derecho a conocer qué datos personales tenemos
+            de usted, para qué los utilizamos y las condiciones del uso que les damos (Acceso). Asimismo, es su derecho
+            solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o
+            incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando considere que la
+            misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus datos personales
+            para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO. Para el ejercicio de
+            cualquiera de los derechos ARCO, usted deberá presentar la solicitud respectiva a través de Al mismo correo
+            donde se envió la petición. La respuesta a su solicitud será atendida en un plazo máximo de 20 días hábiles.
+            DATOS RECABADOS POR EL SITIO WEB Nuestro sitio web recaba automáticamente los siguientes datos: •
+            Identificadores, nombre de usuario y contraseñas de sesión CONTACTO Para más información sobre este aviso de
+            privacidad, puede contactarnos en: Correo electrónico: diegoortega2552@gmail.com Sitio web:
+            https://pretzelbashi.github.io/ZirconZtudio/</p>
+</section>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            background: #dceaf3;
+
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        /*=====================*/
+
+        .gamePage {
+
+            max-width: 1300px;
+
+            margin: auto;
+
+            padding: 40px 25px 70px;
+
+        }
+
+        /*=====================
+GALLERY
+=====================*/
+
+        .gallery {
+
+            display: flex;
+
+            gap: 30px;
+
+            justify-content: center;
+
+            margin-bottom: 35px;
+
+        }
+
+        .thumb {
+
+            width: 260px;
+
+            height: 420px;
+
+            overflow: hidden;
+
+            background: #297ed2;
+
+            border:
+
+                8px solid #1563b3;
+
+            transition: .2s;
+
+        }
+
+        .thumb img {
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+        }
+
+        .thumb:hover {
+
+            transform: translateY(-6px);
+
+        }
+
+        .active {
+
+            border-color: #66c0ff;
+            background-color: #02182e;
+            background-image: url(imagenes/Captura\ de\ pantalla\ 2026-05-26\ 214556.png);
+            background-size: contain;
+            background-position: 0px;
+
+            background-repeat: no-repeat;
+
+        }
+
+        /*=====================
+GAME PANEL
+=====================*/
+
+        .gamePanel {
+
+            position: relative;
+
+            overflow: hidden;
+
+            background:
+
+                linear-gradient(rgba(27, 60, 150, .75),
+                    rgba(27, 60, 150, .75)),
+
+                url(imagenes/gameplayGIF.gif);
+
+            background-size: cover;
+
+            color: white;
+
+            border:
+
+                10px solid #3ba7ff;
+
+        }
+
+        .gamePanel h1 {
+
+            background: #4da7f5;
+
+            padding: 20px;
+
+            text-align: center;
+
+            font-size: 40px;
+
+        }
+
+        .content {
+
+            position: relative;
+
+            padding: 40px;
+
+        }
+
+        .description {
+
+            background:
+
+                rgba(0, 0, 0, .45);
+
+            padding: 30px;
+
+            line-height: 1.8;
+
+            font-size: 18px;
+
+            max-width: 900px;
+
+        }
+
+        .price {
+
+            position: absolute;
+
+            right: 30px;
+
+            bottom: 25px;
+
+            background: #58aff8;
+
+            color: white;
+
+            font-size: 36px;
+
+            font-weight: bold;
+
+            padding:
+
+                18px 35px;
+
+        }
+
+        .caption {
+
+            padding: 14px;
+
+            text-align: center;
+
+            color: #bddbff;
+
+            background:
+
+                rgba(0, 0, 0, .35);
+
+        }
+
+        /*=====================
+BUTTONS
+=====================*/
+
+        .actions {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 25px;
+
+            margin-top: 25px;
+
+        }
+
+        .actions button {
+
+            border: none;
+
+            background: #1f7fe0;
+
+            color: white;
+
+            font-size: 22px;
+
+            font-weight: bold;
+
+            padding:
+
+                18px 40px;
+
+            border:
+
+                5px solid #66c0ff;
+
+            cursor: pointer;
+
+        }
+
+        .actions button:hover {
+
+            background: #156fd0;
+
+        }
+
+        .status {
+
+            background: #55789f !important;
+
+        }
+
+        /*=====================*/
+
+        @media(max-width:900px) {
+
+            .gallery {
+
+                flex-direction: column;
+
+                align-items: center;
+
+            }
+
+            .thumb {
+
+                width: 100%;
+                max-width: 320px;
+
+                height: 300px;
+
+            }
+
+            .gamePanel h1 {
+
+                font-size: 30px;
+
+            }
+
+            .price {
+
+                position: static;
+
+                margin-top: 20px;
+
+                display: inline-block;
+
+            }
+
+            .actions {
+
+                flex-direction: column;
+
+            }
+
+        }
+
+        .demoButton{
+
+    text-decoration:none;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#1f7fe0;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    padding:18px 40px;
+
+    border:5px solid #66c0ff;
+
+    transition:.2s;
+
+}
+
+.demoButton:hover{
+
+    background:#156fd0;
+
+}
+    </style>

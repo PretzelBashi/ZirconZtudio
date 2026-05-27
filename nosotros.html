@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+<title>Zircon Studio - Nosotros</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#dceaf3;
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+
+    padding-left:20px;
+}
+
+.logoCircle{
+
+    width:34px;
+    height:34px;
+
+    border-radius:50%;
+
+    background:
+    linear-gradient(
+        135deg,
+        #00c6ff,
+        #0057ff
+    );
+
+    border:3px solid white;
+}
+
+.links{
+
+    display:flex;
+    height:100%;
+}
+
+.links a{
+
+    text-decoration:none;
+
+    color:#0048a5;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 18px;
+
+    border-left:2px solid #4aa7ff;
+
+    font-weight:bold;
+}
+
+.links a:hover{
+
+    background:#c8d9ea;
+
+}
+
+/*======================
+HEADER
+=======================*/
+
+.hero{
+
+    background:
+
+    linear-gradient(
+        rgba(30,63,153,.82),
+        rgba(30,63,153,.82)
+    ),
+
+    url("/imagenes/gameplayGIF.gif");
+
+    background-size:cover;
+
+    text-align:center;
+
+    color:white;
+
+    padding:70px 20px;
+
+    border-bottom:8px solid #41a7ff;
+}
+
+.logoBox{
+
+    width:250px;
+    height:180px;
+
+    margin:auto;
+
+    border:6px solid #66c0ff;
+
+    background:#d0e6ff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:60px;
+    background-image: url(imagenes/ZZ\ Logo2_Mesa\ de\ trabajo\ 1.png);
+    background-size: cover;
+
+    margin-bottom:25px;
+}
+
+.hero h1{
+
+    font-size:52px;
+
+    margin-bottom:20px;
+}
+
+.hero p{
+
+    max-width:950px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    font-size:21px;
+
+    font-weight:bold;
+}
+
+/*======================
+MISSION VISION
+=======================*/
+
+.section{
+
+    padding:70px 30px;
+}
+
+.row{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:flex;
+
+    gap:40px;
+}
+
+.card{
+
+    flex:1;
+
+    background:#2d87dc;
+
+    color:white;
+
+    border:8px solid #1a67ba;
+
+    padding:35px;
+
+    text-align:center;
+}
+
+.card h2{
+
+    margin-bottom:20px;
+
+    font-size:38px;
+}
+
+.card p{
+
+    line-height:1.8;
+
+    font-size:18px;
+}
+
+/*======================
+SOCIAL
+=======================*/
+
+.social{
+
+    background:#4da8f5;
+
+    text-align:center;
+
+    padding:70px 20px;
+
+    color:white;
+
+    border-top:8px solid #dceaf3;
+}
+
+.social h2{
+
+    font-size:44px;
+
+    margin-bottom:40px;
+}
+
+.icons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    margin-bottom:45px;
+}
+
+#iconYT{
+
+    width:110px;
+    height:110px;
+
+    background:#2b7fd1;
+
+    border:6px solid #65bfff;
+
+    font-size:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+    background-image: url(imagenes/vecteezy_white-square-bordered-youtube-logo-on-transparent-background_42127234.png);
+    background-size: cover;
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+#iconIG{
+
+    width:110px;
+    height:110px;
+
+    background:#2b7fd1;
+
+    border:6px solid #65bfff;
+
+    font-size:40px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+    background-image: url(imagenes/Instagram_icon.png);
+    background-size: cover;
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.icon:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.contact{
+
+    border:none;
+
+    background:#1f7fe0;
+
+    color:white;
+
+    padding:18px 50px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    border:4px solid #66c0ff;
+}
+
+.contact:hover{
+
+    background:#166dca;
+
+}
+
+/*======================
+RESPONSIVE
+=======================*/
+
+@media(max-width:800px){
+
+.row{
+
+    flex-direction:column;
+
+}
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.card h2{
+
+    font-size:30px;
+
+}
+
+.icons{
+
+    gap:18px;
+
+}
+
+.icon{
+
+    width:90px;
+    height:90px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+
+    <div id="navegacion">
+        <div id="logo">
+            <h2>ZZtudio</h2>
+        </div>
+
+        <div id="botones">
+            <a href="index.html" class="boton">Inicio</a>
+            <a href="juegos.html" class="boton">Juegos</a>
+            <a href="nosotros.html" class="boton">Nosotros</a>
+            <a href="contacto.html" class="boton">Contacto</a>
+        </div>
+    </div>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="logoBox">
+
+</div>
+
+<h1>Zircon Studio</h1>
+
+<p>
+
+Somos un estudio indie de videojuegos enfocado en crear experiencias
+simples, accesibles y divertidas mientras desarrollamos talento nuevo
+y ayudamos a que más personas descubran este hobby.
+
+</p>
+
+</section>
+
+
+<!-- MISSION -->
+
+<section class="section">
+
+<div class="row">
+
+<div class="card">
+
+<h2>Misión</h2>
+
+<p>
+
+Crear videojuegos memorables mientras construimos un espacio donde
+personas con poca experiencia puedan aprender, colaborar y crecer.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>Visión</h2>
+
+<p>
+
+Convertirnos en un estudio reconocido por impulsar nuevas ideas y
+demostrar que equipos pequeños pueden crear experiencias únicas.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SOCIAL -->
+
+<section class="social">
+
+<h2>Redes sociales</h2>
+
+<div class="icons">
+
+<div id="iconYT"></div>
+
+<div id="iconIG"></div>
+
+</div>
+
+<button class="contact">
+Contacto
+</button>
+
+        <br><br><br><br>
+        <p>AVISO DE PRIVACIDAD:  
+
+            Diego, comercialmente conocido como Zircon Ztudio, con domicilio en [Dirección completa], es el responsable
+            del uso y protección de sus datos personales. FINALIDADES PRIMARIAS Los datos personales que recabamos de
+            usted, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita: •
+            Prestación de cualquier servicio solicitado • Envío de productos adquiridos en esta tienda en línea DATOS
+            PERSONALES RECABADOS Para las finalidades señaladas en el presente aviso de privacidad, podemos recabar sus
+            datos de identificación y contacto. DERECHOS ARCO Usted tiene derecho a conocer qué datos personales tenemos
+            de usted, para qué los utilizamos y las condiciones del uso que les damos (Acceso). Asimismo, es su derecho
+            solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o
+            incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando considere que la
+            misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus datos personales
+            para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO. Para el ejercicio de
+            cualquiera de los derechos ARCO, usted deberá presentar la solicitud respectiva a través de Al mismo correo
+            donde se envió la petición. La respuesta a su solicitud será atendida en un plazo máximo de 20 días hábiles.
+            DATOS RECABADOS POR EL SITIO WEB Nuestro sitio web recaba automáticamente los siguientes datos: •
+            Identificadores, nombre de usuario y contraseñas de sesión CONTACTO Para más información sobre este aviso de
+            privacidad, puede contactarnos en: Correo electrónico: diegoortega2552@gmail.com Sitio web:
+            https://pretzelbashi.github.io/ZirconZtudio/</p>
+
+</section>
+
+</body>
+
+</html>

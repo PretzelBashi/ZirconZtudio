@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ZZtudio</title>
+</head>
+
+<body>
+
+    <div id="navegacion">
+        <div id="logo">
+            <h2>ZZtudio</h2>
+        </div>
+
+        <div id="botones">
+            <a href="index.html" class="boton">Inicio</a>
+            <a href="juegos.html" class="boton">Juegos</a>
+            <a href="nosotros.html" class="boton">Nosotros</a>
+            <a href="contacto.html" class="boton">Contacto</a>
+        </div>
+    </div>
+
+<section class="contactPage">
+
+    <div class="titleBar">
+        Contactanos
+    </div>
+
+
+    <form class="contactForm">
+
+        <label>Nombre</label>
+        <input type="text">
+
+
+        <label>Motivo</label>
+        <input type="text">
+
+
+        <label>Descripcion</label>
+        <textarea></textarea>
+
+
+        <label>Telefono o correo</label>
+        <input type="text">
+
+
+        <div class="sendArea">
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </div>
+
+    </form>
+
+    
+
+</section>
+
+    <section class="social">
+
+<h2>Redes sociales</h2>
+
+<div class="icons">
+
+<a id="iconYT" href="https://www.youtube.com/channel/UCGu1oypt3LxskJd3Rn0k_fA"></a>
+
+<a id="iconIG" href="https://www.instagram.com/z.ztudio.0/"></a>
+
+</div>
+
+<button class="contact">
+Contacto
+</button>
+
+        <br><br><br><br>
+        <p>AVISO DE PRIVACIDAD:  
+
+            Diego, comercialmente conocido como Zircon Ztudio, con domicilio en [Dirección completa], es el responsable
+            del uso y protección de sus datos personales. FINALIDADES PRIMARIAS Los datos personales que recabamos de
+            usted, los utilizaremos para las siguientes finalidades que son necesarias para el servicio que solicita: •
+            Prestación de cualquier servicio solicitado • Envío de productos adquiridos en esta tienda en línea DATOS
+            PERSONALES RECABADOS Para las finalidades señaladas en el presente aviso de privacidad, podemos recabar sus
+            datos de identificación y contacto. DERECHOS ARCO Usted tiene derecho a conocer qué datos personales tenemos
+            de usted, para qué los utilizamos y las condiciones del uso que les damos (Acceso). Asimismo, es su derecho
+            solicitar la corrección de su información personal en caso de que esté desactualizada, sea inexacta o
+            incompleta (Rectificación); que la eliminemos de nuestros registros o bases de datos cuando considere que la
+            misma no está siendo utilizada adecuadamente (Cancelación); así como oponerse al uso de sus datos personales
+            para fines específicos (Oposición). Estos derechos se conocen como derechos ARCO. Para el ejercicio de
+            cualquiera de los derechos ARCO, usted deberá presentar la solicitud respectiva a través de Al mismo correo
+            donde se envió la petición. La respuesta a su solicitud será atendida en un plazo máximo de 20 días hábiles.
+            DATOS RECABADOS POR EL SITIO WEB Nuestro sitio web recaba automáticamente los siguientes datos: •
+            Identificadores, nombre de usuario y contraseñas de sesión CONTACTO Para más información sobre este aviso de
+            privacidad, puede contactarnos en: Correo electrónico: diegoortega2552@gmail.com Sitio web:
+            https://pretzelbashi.github.io/ZirconZtudio/</p>
+
+</section>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#dceaf3;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/*=====================*/
+
+.contactPage{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding-bottom:60px;
+
+}
+
+/*=====================*/
+
+.titleBar{
+
+    background:#4da8f5;
+
+    color:white;
+
+    text-align:center;
+
+    font-size:36px;
+
+    font-weight:bold;
+
+    padding:22px;
+
+    border-top:8px solid #dceaf3;
+
+    border-bottom:8px solid #dceaf3;
+
+}
+
+/*=====================*/
+
+.contactForm{
+
+    background:#2d87dc;
+
+    border:10px solid #1a67ba;
+
+    padding:40px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.contactForm label{
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    margin-bottom:10px;
+
+}
+
+.contactForm input,
+.contactForm textarea{
+
+    border:none;
+
+    background:#b7d8f6;
+
+    color:#003b7d;
+
+    font-size:18px;
+
+    padding:16px;
+
+    margin-bottom:28px;
+
+}
+
+.contactForm input{
+
+    height:60px;
+
+}
+
+.contactForm textarea{
+
+    resize:vertical;
+
+    min-height:240px;
+
+}
+
+/*=====================*/
+
+.sendArea{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+.sendArea button{
+
+    border:none;
+
+    background:#1f7fe0;
+
+    color:white;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    padding:
+
+    18px 55px;
+
+    border:
+
+    5px solid #66c0ff;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.sendArea button:hover{
+
+    background:#156fd0;
+
+}
+
+/*=====================*/
+
+.contactForm input:focus,
+.contactForm textarea:focus{
+
+    outline:
+
+    4px solid #66c0ff;
+
+}
+
+/*=====================*/
+
+@media(max-width:700px){
+
+.contactForm{
+
+    padding:25px;
+
+}
+
+.titleBar{
+
+    font-size:28px;
+
+}
+
+.contactForm label{
+
+    font-size:18px;
+
+}
+
+.sendArea{
+
+    justify-content:center;
+
+}
+
+.sendArea button{
+
+    width:100%;
+
+}
+
+}
+
+</style>
